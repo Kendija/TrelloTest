@@ -6,10 +6,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"pretty",
-                "json:target/cucumber-reports/CucumberTestReport.json",
-                "junit:target/cucumber-reports/report.xml"
-        },
+        plugin = {"pretty"},
         features = {"src/test/resources/features"},
         glue = {"trelloApi/stepdefinitions"}
 )
